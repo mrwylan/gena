@@ -1,13 +1,15 @@
 package info.wylan.gena;
 
+import com.vaadin.flow.component.page.AppShellConfigurator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.vaadin.flow.theme.Theme;
 
 @SpringBootApplication
-public class GenaApplication {
+@Theme("gena")
+public class GenaApplication implements AppShellConfigurator {
 
-	public static void main(String[] args) {
-		SpringApplication.run(GenaApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(GenaApplication.class, args);
+    }
 }
